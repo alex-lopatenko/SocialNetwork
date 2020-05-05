@@ -11,12 +11,7 @@ import {Provider} from "react-redux";
     store.dispatch({type: "FAKE"})
 }, 1000);*/
 
-ReactDOM.render(
-    <BrowserRouter>
-        <Provider store={store}>
-            <App/>
-        </Provider>
-    </BrowserRouter>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 
 
 
