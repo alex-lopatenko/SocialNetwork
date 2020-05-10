@@ -2,11 +2,10 @@ import React from 'react';
 import styles from "./users.module.css";
 import userPhoto from "../../assets/images/user.png";
 import {NavLink} from "react-router-dom";
-import Paginator from "../common/Paginator/Paginator";
 
 let User = ({user, followingInProgress, unfollow, follow}) => {
     return (
-       <div>
+        <div>
                 <span>
                     <div>
                        <NavLink to={'/profile/' + user.id}>
@@ -22,11 +21,11 @@ let User = ({user, followingInProgress, unfollow, follow}) => {
                                 Unfollow</button>
                             : <button disabled={followingInProgress.some(id => id === user.id)}
                                       onClick={() => { follow(user.id) }}>
-                                      Follow</button>}
+                                Follow</button>}
 
                     </div>
                 </span>
-                <span>
+            <span>
                     <span>
                         <div>{user.name}</div>
                         <div>{user.status}</div>
@@ -36,7 +35,7 @@ let User = ({user, followingInProgress, unfollow, follow}) => {
                         <div>{"user.location.city"}</div>
                     </span>
                 </span>
-            </div>)
+        </div>)
 }
 
 export default User;
