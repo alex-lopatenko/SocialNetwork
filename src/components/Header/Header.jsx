@@ -1,10 +1,10 @@
 import React from 'react';
-import s from './Header.module.css'
-import {NavLink} from 'react-router-dom';
+import s from './Header.module.css';
+import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
     return <header className={s.header}>
-        <img src='https://ichef.bbci.co.uk/news/976/cpsprodpb/2B87/production/_90934111_1-1.jpg' />
+        <img src='https://www.freelogodesign.org/Content/img/logo-ex-7.png' />
 
         <div className={s.loginBlock}>
             { props.isAuth
