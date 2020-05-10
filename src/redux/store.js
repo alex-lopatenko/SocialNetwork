@@ -6,11 +6,11 @@ let store = {
     _state: {
         profilePage: {
             posts: [
-                {id: 1, message: 'Привет', lickesCount: 10},
-                {id: 2, message: 'Привет, как дела?', lickesCount: 16},
-                {id: 3, message: 'Все отлично', lickesCount: 8},
-                {id: 4, message: 'Привет мир', lickesCount: 5},
-                {id: 5, message: 'Yo', lickesCount: 15}
+                {id: 1, message: 'Привет', likesCount: 10},
+                {id: 2, message: 'Привет, как дела?', likesCount: 16},
+                {id: 3, message: 'Все отлично', likesCount: 8},
+                {id: 4, message: 'Привет мир', likesCount: 5},
+                {id: 5, message: 'Yo', likesCount: 15}
             ],
             newPostText: 'social-network.ru'
         },

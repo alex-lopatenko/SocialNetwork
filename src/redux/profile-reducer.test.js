@@ -5,16 +5,17 @@ import React from "react";
 
 let state = {
     posts: [
-        {id: 1, message: 'Hi, how are you?', likesCount: 12},
-        {id: 2, message: 'It\'s my first post', likesCount: 11},
-        {id: 3, message: 'Blabla', likesCount: 11},
-        {id: 4, message: 'Dada', likesCount: 11}
+        {id: 1, message: 'Привет', likesCount: 10},
+        {id: 2, message: 'Привет, как дела?', likesCount: 16},
+        {id: 3, message: 'Все отлично', likesCount: 8},
+        {id: 4, message: 'Привет мир', likesCount: 5},
+        {id: 5, message: 'Yo', likesCount: 15}
     ]
 };
 
 it('length of posts should be incremented', () => {
     // 1. test data
-    let action = addPostActionCreator("it-kamasutra.com");
+    let action = addPostActionCreator("social-network.ru");
 
     // 2. action
     let newState = profileReducer(state, action);
@@ -26,13 +27,13 @@ it('length of posts should be incremented', () => {
 
 it('message of new post should be correct', () => {
     // 1. test data
-    let action = addPostActionCreator("it-kamasutra.com");
+    let action = addPostActionCreator("social-network.ru");
 
     // 2. action
     let newState = profileReducer(state, action);
 
     // 3. expectation
-    expect(newState.posts[4].message).toBe("it-kamasutra.com");
+    expect(newState.posts[4].message).toBe("social-network.ru");
 });
 
 it('after deleting length of messages should be decrement', () => {
