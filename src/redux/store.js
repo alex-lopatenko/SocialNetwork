@@ -10,7 +10,8 @@ let store = {
                 {id: 2, message: 'Привет, как дела?', likesCount: 16},
                 {id: 3, message: 'Все отлично', likesCount: 8},
                 {id: 4, message: 'Привет мир', likesCount: 5},
-                {id: 5, message: 'Yo', likesCount: 15}
+                {id: 5, message: 'Yo', likesCount: 15},
+                {id: 6, message: 'Как успехи?', likesCount: 17}
             ],
             newPostText: 'social-network.ru'
         },
@@ -28,7 +29,8 @@ let store = {
                 {id: 2, message: 'Привет, как дела?'},
                 {id: 3, message: 'Все отлично'},
                 {id: 4, message: 'Привет мир'},
-                {id: 5, message: 'Yo'}
+                {id: 5, message: 'Yo'},
+                {id: 6, message: 'Как успехи?'}
             ],
             newMessageBody: ""
         },
