@@ -4,8 +4,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import SocialJSApp from "./App";
 
-ReactDOM.render(
-    <SocialJSApp/>, document.getElementById('root'));
+ReactDOM.render(<SocialJSApp/>, document.getElementById('root'));
 
 
 // API
