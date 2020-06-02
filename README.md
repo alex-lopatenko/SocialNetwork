@@ -1,8 +1,4 @@
 Реализация учебного проекта "социальной сети".
-<br>
-<br>
-<br>
-*Статус:* "В разработке"
 
 ### `npm start`
 Open (local) [http://localhost:3000](http://localhost:3000).
@@ -26,3 +22,4 @@ Open (local) [http://localhost:3000](http://localhost:3000).
 <br>
 <b>Users</b>
 ![Image alt](https://github.com/alex-lopatenko/SocialNetwork/blob/master/preview_img/Users.png)
+
