@@ -1,5 +1,19 @@
 Реализация учебного проекта "социальной сети".
 
+**Статус:** В разработке
+
+**Стэк:**
+- JavaScript
+- TypeScript
+- React
+- React Router
+- Redux
+- Redux-form
+- Redux-thunk
+- Reselect
+- Axios
+
+
 ### `npm start`
 Open (local) [http://localhost:3000](http://localhost:3000).
 
