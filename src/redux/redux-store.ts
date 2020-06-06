@@ -16,10 +16,14 @@ let rootReducer = combineReducers({
     auth: authReducer,
     form: formReducer,
     app: appReducer
-});
+})
 
 type RootReducerType = typeof rootReducer;  // (globalstate: GLOBALSTATE) => GLOBALSTATE
 export type AppStateType = ReturnType<RootReducerType>
+
+type PropertiesTypes<T> = T extends {[key: string]: infer U} ? U : never
+
+export type InferActionsType<T extends {[key: string]: (...args: any[]) => any}> = ReturnType<PropertiesTypes<T>>
 
 // @ts-ignore
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
