@@ -3,6 +3,7 @@ import styles from "./FormsControls.module.css"
 import {FieldValidatorType} from "../../../utils/validators/validators"
 import {Field, WrappedFieldProps} from "redux-form"
 import { WrappedFieldMetaProps } from 'redux-form/lib/Field'
+import {LoginFormValuesType} from "../../Login/Login";
 
 type FormControlPropsType = {
     meta: WrappedFieldMetaProps
@@ -45,3 +46,5 @@ export function createField<FormKeysType extends string>(placeholder: string | u
         /> {text}
     </div>
 }
+
+export type GetStringKeys<T> = Extract<keyof T, string>
